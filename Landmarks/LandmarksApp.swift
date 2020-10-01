@@ -1,17 +1,16 @@
-//
-//  LandmarksApp.swift
-//  Landmarks
-//
-//  Created by Petr Pokorny on 9/30/20.
-//
-
 import SwiftUI
 
 @main
 struct LandmarksApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandmarkList()
         }
+    }
+}
+
+extension UIApplication {
+    static var mapTilerKey: String? {
+        return Bundle.main.object(forInfoDictionaryKey: "MapTilerKey") as? String
     }
 }

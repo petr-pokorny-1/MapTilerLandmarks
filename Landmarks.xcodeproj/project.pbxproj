@@ -3,23 +3,89 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BAA863125264CC9009679FD /* lake_clark.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 4BAA862F25264CC8009679FD /* lake_clark.geojson */; };
+		4BAA863225264CC9009679FD /* joshua_tree.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 4BAA863025264CC9009679FD /* joshua_tree.geojson */; };
+		4BAA863D252651AA009679FD /* landmark-icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4BAA863C252651AA009679FD /* landmark-icon.pdf */; };
+		4BB8E6A22524C65000BB4A16 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8E6A12524C65000BB4A16 /* CircleImage.swift */; };
+		4BB8E6A92524C87C00BB4A16 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8E6A82524C87C00BB4A16 /* MapView.swift */; };
 		4BC0D2A22524BE5D008E311B /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC0D2A12524BE5D008E311B /* LandmarksApp.swift */; };
-		4BC0D2A42524BE5D008E311B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC0D2A32524BE5D008E311B /* ContentView.swift */; };
+		4BC0D2A42524BE5D008E311B /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC0D2A32524BE5D008E311B /* LandmarkDetail.swift */; };
 		4BC0D2A62524BE5F008E311B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC0D2A52524BE5F008E311B /* Assets.xcassets */; };
 		4BC0D2A92524BE5F008E311B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC0D2A82524BE5F008E311B /* Preview Assets.xcassets */; };
+		4BD45B812525D4DB00805735 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD45B802525D4DB00805735 /* Landmark.swift */; };
+		4BD45B862525D62200805735 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B852525D62200805735 /* landmarkData.json */; };
+		4BD45B8B2525D73800805735 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD45B8A2525D73800805735 /* LandmarkRow.swift */; };
+		4BD45B992525D83700805735 /* chincoteague.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B8D2525D83600805735 /* chincoteague.jpg */; };
+		4BD45B9A2525D83700805735 /* rainbowlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B8E2525D83600805735 /* rainbowlake.jpg */; };
+		4BD45B9B2525D83700805735 /* stmarylake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B8F2525D83600805735 /* stmarylake.jpg */; };
+		4BD45B9C2525D83700805735 /* lakemcdonald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B902525D83600805735 /* lakemcdonald.jpg */; };
+		4BD45B9D2525D83700805735 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B912525D83600805735 /* chilkoottrail.jpg */; };
+		4BD45B9E2525D83700805735 /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B922525D83600805735 /* umbagog.jpg */; };
+		4BD45B9F2525D83700805735 /* yukon_charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B932525D83600805735 /* yukon_charleyrivers.jpg */; };
+		4BD45BA02525D83700805735 /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B942525D83600805735 /* silversalmoncreek.jpg */; };
+		4BD45BA12525D83700805735 /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B952525D83600805735 /* turtlerock.jpg */; };
+		4BD45BA22525D83700805735 /* twinlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B962525D83600805735 /* twinlake.jpg */; };
+		4BD45BA32525D83700805735 /* hiddenlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B972525D83600805735 /* hiddenlake.jpg */; };
+		4BD45BA42525D83700805735 /* icybay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45B982525D83600805735 /* icybay.jpg */; };
+		4BD45BA72525D85200805735 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD45BA62525D85200805735 /* Data.swift */; };
+		4BD45BAA2525DA7A00805735 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD45BA92525DA7A00805735 /* LandmarkList.swift */; };
+		4BD45BAD2525E91300805735 /* polygon.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 4BD45BAC2525E91300805735 /* polygon.geojson */; };
+		4BE40D402526492800CBAC86 /* chincoteague.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 4BE40D362526492500CBAC86 /* chincoteague.geojson */; };
+		4BE40D412526492800CBAC86 /* glacier.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 4BE40D372526492600CBAC86 /* glacier.geojson */; };
+		4BE40D432526492800CBAC86 /* rainbow_lakes.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 4BE40D392526492600CBAC86 /* rainbow_lakes.geojson */; };
+		4BE40D442526492800CBAC86 /* klondike_gold_rush.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 4BE40D3A2526492600CBAC86 /* klondike_gold_rush.geojson */; };
+		4BE40D452526492800CBAC86 /* umbagog.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 4BE40D3B2526492800CBAC86 /* umbagog.geojson */; };
+		4BE40D462526492800CBAC86 /* north_cascades.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 4BE40D3C2526492800CBAC86 /* north_cascades.geojson */; };
+		4BE40D472526492800CBAC86 /* charley_rivers.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 4BE40D3D2526492800CBAC86 /* charley_rivers.geojson */; };
+		4BE40D482526492800CBAC86 /* wrangell_st_elias.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 4BE40D3E2526492800CBAC86 /* wrangell_st_elias.geojson */; };
+		917BFDEA688506E387658115 /* Pods_Landmarks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C554E35E743C3652C13A6ECA /* Pods_Landmarks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E90EC0E3986C51E1F74F64F /* Pods-Landmarks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Landmarks.debug.xcconfig"; path = "Target Support Files/Pods-Landmarks/Pods-Landmarks.debug.xcconfig"; sourceTree = "<group>"; };
+		446D04DA058997E42439B4EB /* Pods-Landmarks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Landmarks.release.xcconfig"; path = "Target Support Files/Pods-Landmarks/Pods-Landmarks.release.xcconfig"; sourceTree = "<group>"; };
+		4BAA862F25264CC8009679FD /* lake_clark.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lake_clark.geojson; sourceTree = "<group>"; };
+		4BAA863025264CC9009679FD /* joshua_tree.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = joshua_tree.geojson; sourceTree = "<group>"; };
+		4BAA863C252651AA009679FD /* landmark-icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "landmark-icon.pdf"; sourceTree = "<group>"; };
+		4BB8E6A12524C65000BB4A16 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		4BB8E6A82524C87C00BB4A16 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4BC0D29E2524BE5D008E311B /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC0D2A12524BE5D008E311B /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
-		4BC0D2A32524BE5D008E311B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4BC0D2A32524BE5D008E311B /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		4BC0D2A52524BE5F008E311B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BC0D2A82524BE5F008E311B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4BC0D2AA2524BE5F008E311B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD45B802525D4DB00805735 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		4BD45B852525D62200805735 /* landmarkData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		4BD45B8A2525D73800805735 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		4BD45B8D2525D83600805735 /* chincoteague.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chincoteague.jpg; sourceTree = "<group>"; };
+		4BD45B8E2525D83600805735 /* rainbowlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainbowlake.jpg; sourceTree = "<group>"; };
+		4BD45B8F2525D83600805735 /* stmarylake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stmarylake.jpg; sourceTree = "<group>"; };
+		4BD45B902525D83600805735 /* lakemcdonald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lakemcdonald.jpg; sourceTree = "<group>"; };
+		4BD45B912525D83600805735 /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
+		4BD45B922525D83600805735 /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
+		4BD45B932525D83600805735 /* yukon_charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yukon_charleyrivers.jpg; sourceTree = "<group>"; };
+		4BD45B942525D83600805735 /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
+		4BD45B952525D83600805735 /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
+		4BD45B962525D83600805735 /* twinlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twinlake.jpg; sourceTree = "<group>"; };
+		4BD45B972525D83600805735 /* hiddenlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hiddenlake.jpg; sourceTree = "<group>"; };
+		4BD45B982525D83600805735 /* icybay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icybay.jpg; sourceTree = "<group>"; };
+		4BD45BA62525D85200805735 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4BD45BA92525DA7A00805735 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		4BD45BAC2525E91300805735 /* polygon.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = polygon.geojson; sourceTree = "<group>"; };
+		4BE40D362526492500CBAC86 /* chincoteague.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chincoteague.geojson; sourceTree = "<group>"; };
+		4BE40D372526492600CBAC86 /* glacier.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glacier.geojson; sourceTree = "<group>"; };
+		4BE40D392526492600CBAC86 /* rainbow_lakes.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rainbow_lakes.geojson; sourceTree = "<group>"; };
+		4BE40D3A2526492600CBAC86 /* klondike_gold_rush.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = klondike_gold_rush.geojson; sourceTree = "<group>"; };
+		4BE40D3B2526492800CBAC86 /* umbagog.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = umbagog.geojson; sourceTree = "<group>"; };
+		4BE40D3C2526492800CBAC86 /* north_cascades.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = north_cascades.geojson; sourceTree = "<group>"; };
+		4BE40D3D2526492800CBAC86 /* charley_rivers.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = charley_rivers.geojson; sourceTree = "<group>"; };
+		4BE40D3E2526492800CBAC86 /* wrangell_st_elias.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wrangell_st_elias.geojson; sourceTree = "<group>"; };
+		C554E35E743C3652C13A6ECA /* Pods_Landmarks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Landmarks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917BFDEA688506E387658115 /* Pods_Landmarks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +105,8 @@
 			children = (
 				4BC0D2A02524BE5D008E311B /* Landmarks */,
 				4BC0D29F2524BE5D008E311B /* Products */,
+				AC5BA418F114F713E1F07738 /* Pods */,
+				8835670AC1883A78D99EC233 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +121,17 @@
 		4BC0D2A02524BE5D008E311B /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				4BD45B842525D5BE00805735 /* Resources */,
+				4BD45B7F2525D4C200805735 /* Models */,
 				4BC0D2A12524BE5D008E311B /* LandmarksApp.swift */,
-				4BC0D2A32524BE5D008E311B /* ContentView.swift */,
+				4BC0D2A32524BE5D008E311B /* LandmarkDetail.swift */,
 				4BC0D2A52524BE5F008E311B /* Assets.xcassets */,
 				4BC0D2AA2524BE5F008E311B /* Info.plist */,
 				4BC0D2A72524BE5F008E311B /* Preview Content */,
+				4BB8E6A12524C65000BB4A16 /* CircleImage.swift */,
+				4BB8E6A82524C87C00BB4A16 /* MapView.swift */,
+				4BD45B8A2525D73800805735 /* LandmarkRow.swift */,
+				4BD45BA92525DA7A00805735 /* LandmarkList.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -69,6 +144,64 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4BD45B7F2525D4C200805735 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BD45BA62525D85200805735 /* Data.swift */,
+				4BD45B802525D4DB00805735 /* Landmark.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BD45B842525D5BE00805735 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4BAA863C252651AA009679FD /* landmark-icon.pdf */,
+				4BAA863025264CC9009679FD /* joshua_tree.geojson */,
+				4BAA862F25264CC8009679FD /* lake_clark.geojson */,
+				4BE40D3D2526492800CBAC86 /* charley_rivers.geojson */,
+				4BE40D362526492500CBAC86 /* chincoteague.geojson */,
+				4BE40D372526492600CBAC86 /* glacier.geojson */,
+				4BE40D3A2526492600CBAC86 /* klondike_gold_rush.geojson */,
+				4BE40D3C2526492800CBAC86 /* north_cascades.geojson */,
+				4BE40D392526492600CBAC86 /* rainbow_lakes.geojson */,
+				4BE40D3B2526492800CBAC86 /* umbagog.geojson */,
+				4BE40D3E2526492800CBAC86 /* wrangell_st_elias.geojson */,
+				4BD45BAC2525E91300805735 /* polygon.geojson */,
+				4BD45B912525D83600805735 /* chilkoottrail.jpg */,
+				4BD45B8D2525D83600805735 /* chincoteague.jpg */,
+				4BD45B972525D83600805735 /* hiddenlake.jpg */,
+				4BD45B982525D83600805735 /* icybay.jpg */,
+				4BD45B902525D83600805735 /* lakemcdonald.jpg */,
+				4BD45B8E2525D83600805735 /* rainbowlake.jpg */,
+				4BD45B942525D83600805735 /* silversalmoncreek.jpg */,
+				4BD45B8F2525D83600805735 /* stmarylake.jpg */,
+				4BD45B952525D83600805735 /* turtlerock.jpg */,
+				4BD45B962525D83600805735 /* twinlake.jpg */,
+				4BD45B922525D83600805735 /* umbagog.jpg */,
+				4BD45B932525D83600805735 /* yukon_charleyrivers.jpg */,
+				4BD45B852525D62200805735 /* landmarkData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8835670AC1883A78D99EC233 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C554E35E743C3652C13A6ECA /* Pods_Landmarks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC5BA418F114F713E1F07738 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E90EC0E3986C51E1F74F64F /* Pods-Landmarks.debug.xcconfig */,
+				446D04DA058997E42439B4EB /* Pods-Landmarks.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BC0D2AD2524BE5F008E311B /* Build configuration list for PBXNativeTarget "Landmarks" */;
 			buildPhases = (
+				1C41A5D0562791CF9FFBA2A6 /* [CP] Check Pods Manifest.lock */,
 				4BC0D29A2524BE5D008E311B /* Sources */,
 				4BC0D29B2524BE5D008E311B /* Frameworks */,
 				4BC0D29C2524BE5D008E311B /* Resources */,
+				6E38D92AA2FA10485669EB93 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,20 +261,93 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD45B9C2525D83700805735 /* lakemcdonald.jpg in Resources */,
+				4BAA863225264CC9009679FD /* joshua_tree.geojson in Resources */,
+				4BD45B9D2525D83700805735 /* chilkoottrail.jpg in Resources */,
+				4BAA863D252651AA009679FD /* landmark-icon.pdf in Resources */,
+				4BE40D472526492800CBAC86 /* charley_rivers.geojson in Resources */,
+				4BE40D452526492800CBAC86 /* umbagog.geojson in Resources */,
+				4BD45B9B2525D83700805735 /* stmarylake.jpg in Resources */,
 				4BC0D2A92524BE5F008E311B /* Preview Assets.xcassets in Resources */,
+				4BE40D402526492800CBAC86 /* chincoteague.geojson in Resources */,
+				4BD45B9F2525D83700805735 /* yukon_charleyrivers.jpg in Resources */,
+				4BD45B9A2525D83700805735 /* rainbowlake.jpg in Resources */,
+				4BD45BA32525D83700805735 /* hiddenlake.jpg in Resources */,
+				4BE40D482526492800CBAC86 /* wrangell_st_elias.geojson in Resources */,
+				4BE40D412526492800CBAC86 /* glacier.geojson in Resources */,
 				4BC0D2A62524BE5F008E311B /* Assets.xcassets in Resources */,
+				4BE40D442526492800CBAC86 /* klondike_gold_rush.geojson in Resources */,
+				4BD45B9E2525D83700805735 /* umbagog.jpg in Resources */,
+				4BE40D462526492800CBAC86 /* north_cascades.geojson in Resources */,
+				4BE40D432526492800CBAC86 /* rainbow_lakes.geojson in Resources */,
+				4BD45BA12525D83700805735 /* turtlerock.jpg in Resources */,
+				4BD45BA02525D83700805735 /* silversalmoncreek.jpg in Resources */,
+				4BAA863125264CC9009679FD /* lake_clark.geojson in Resources */,
+				4BD45B992525D83700805735 /* chincoteague.jpg in Resources */,
+				4BD45BAD2525E91300805735 /* polygon.geojson in Resources */,
+				4BD45BA22525D83700805735 /* twinlake.jpg in Resources */,
+				4BD45BA42525D83700805735 /* icybay.jpg in Resources */,
+				4BD45B862525D62200805735 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C41A5D0562791CF9FFBA2A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Landmarks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E38D92AA2FA10485669EB93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Landmarks/Pods-Landmarks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Landmarks/Pods-Landmarks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Landmarks/Pods-Landmarks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BC0D29A2524BE5D008E311B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BC0D2A42524BE5D008E311B /* ContentView.swift in Sources */,
+				4BD45BA72525D85200805735 /* Data.swift in Sources */,
+				4BC0D2A42524BE5D008E311B /* LandmarkDetail.swift in Sources */,
+				4BB8E6A92524C87C00BB4A16 /* MapView.swift in Sources */,
+				4BD45BAA2525DA7A00805735 /* LandmarkList.swift in Sources */,
+				4BD45B8B2525D73800805735 /* LandmarkRow.swift in Sources */,
 				4BC0D2A22524BE5D008E311B /* LandmarksApp.swift in Sources */,
+				4BB8E6A22524C65000BB4A16 /* CircleImage.swift in Sources */,
+				4BD45B812525D4DB00805735 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +472,7 @@
 		};
 		4BC0D2AE2524BE5F008E311B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E90EC0E3986C51E1F74F64F /* Pods-Landmarks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +495,7 @@
 		};
 		4BC0D2AF2524BE5F008E311B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 446D04DA058997E42439B4EB /* Pods-Landmarks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
