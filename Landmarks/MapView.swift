@@ -10,6 +10,10 @@ struct MapView: UIViewRepresentable {
         guard let mapTilerKey = UIApplication.mapTilerKey else {
             preconditionFailure("Failed to read MapTiler key from info.plist")
         }
+        let result: ComparisonResult = mapTilerKey.compare("placeholder", options: NSString.CompareOptions.caseInsensitive, range: nil, locale: nil)
+        if result == .orderedSame {
+            preconditionFailure("Please enter correct MapTiler key in info.plist[MapTilerKey] property")
+        }
         
         let styleURL = URL(string: "https://api.maptiler.com/maps/outdoor/style.json?key=\(mapTilerKey)")
         let mapView = MGLMapView(frame: .zero, styleURL: styleURL)
