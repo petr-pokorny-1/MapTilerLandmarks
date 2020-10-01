@@ -13,3 +13,5 @@ A live Xcode project/app that demonstrates how to use Mapbox Maps SDK for iOS wi
 1. Open `Landmarks.xcworkspace` in Xcode.
 1. Create MapTiler account and [obtain the api key](https://cloud.maptiler.com/account/keys).
 1. Set the MapTilerKey property in `Landmarks/info.plist` to the value obtained in the previous step.
+
+![Preview](Landmarks.gif)
